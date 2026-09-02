@@ -39,8 +39,8 @@ jobs:
     
     - name: Check SQL script exists
       run: |
-        if [ ! -f "docs/RaceDay_DatabaseScript.sql" ]; then
-          echo "RaceDay_DatabaseScript.sql not found!"
+        if [ ! -f "docs/RaceDayDatabase.sql" ]; then
+          echo "RaceDayDatabase.sql not found!"
           exit 1
         fi
         echo "RaceDayDatabase.sql found"
