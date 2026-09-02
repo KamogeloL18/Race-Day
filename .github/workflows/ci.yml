@@ -31,7 +31,7 @@ jobs:
     
     - name: Check API Endpoint Plan exists
       run: |
-        if [ ! -f "docs/API_Endpoint_Plan.pdf" ]; then
+        if [ ! -f "docs/APIEndpointPlan.pdf" ]; then
           echo "APIEndpointPlan.pdf not found!"
           exit 1
         fi
@@ -43,7 +43,7 @@ jobs:
           echo "RaceDay_DatabaseScript.sql not found!"
           exit 1
         fi
-        echo "RaceDay_DatabaseScript.sql found"
+        echo "RaceDayDatabase.sql found"
     
     - name: Check README exists
       run: |
