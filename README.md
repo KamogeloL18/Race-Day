@@ -16,7 +16,7 @@ Can create an account, browse events, enrol by selecting a category, view own en
 All planning documents are in the `/docs` folder:
 
 - `ERD.pdf` - Entity Relationship Diagram for RaceDay database with 7 entities 
-- `APIEndpointPlan.pdf` - RESTful API endpoint specifications tables
+- `APIEndpointPlan.pdf` - RESTful API endpoint specifications tables including CRUD columns
 - `RaceDayDatabase.sql` - SQL Server database creation script for the database schema 
 
 ## CI/CD Status
