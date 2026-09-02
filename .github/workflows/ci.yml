@@ -1,0 +1,76 @@
+name: CI/CD Pipeline - Part 1
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Check docs folder exists
+      run: |
+        if [ ! -d "docs" ]; then
+          echo " docs folder not found!"
+          exit 1
+        fi
+        echo "docs folder found"
+    
+    - name: Check ERD exists
+      run: |
+        if [ ! -f "docs/ERD.pdf" ]; then
+          echo "ERD.pdf not found!"
+          exit 1
+        fi
+        echo "ERD.pdf found"
+    
+    - name: Check API Endpoint Plan exists
+      run: |
+        if [ ! -f "docs/API_Endpoint_Plan.pdf" ]; then
+          echo "APIEndpointPlan.pdf not found!"
+          exit 1
+        fi
+        echo "APIEndpointPlan.pdf found"
+    
+    - name: Check SQL script exists
+      run: |
+        if [ ! -f "docs/RaceDay_DatabaseScript.sql" ]; then
+          echo "RaceDay_DatabaseScript.sql not found!"
+          exit 1
+        fi
+        echo "RaceDay_DatabaseScript.sql found"
+    
+    - name: Check README exists
+      run: |
+        if [ ! -f "README.md" ]; then
+          echo "README.md not found!"
+          exit 1
+        fi
+        echo "README.md found"
+    
+    - name: Check .gitignore exists
+      run: |
+        if [ ! -f ".gitignore" ]; then
+          echo ".gitignore not found!"
+          exit 1
+        fi
+        echo ".gitignore found"
+    
+    - name: Validate SQL script
+      run: |
+        if grep -i "CREATE DATABASE" docs/RaceDay_DatabaseScript.sql; then
+          echo "Database creation statement found"
+        fi
+        if grep -i "CREATE TABLE" docs/RaceDay_DatabaseScript.sql; then
+          echo "CREATE TABLE statements found"
+        fi
+    
+    - name: All checks passed
+      run: |
+        echo "All validation checks passed!"
+        echo "Repository structure is valid for Part 1"
