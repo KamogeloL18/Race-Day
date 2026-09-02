@@ -1,0 +1,28 @@
+# Visual Studio
+*.sln
+*.suo
+*.user
+*.userosscache
+.vs/
+
+# Build output
+/bin/
+/obj/
+/publish/
+
+# User files
+*.rsuser
+*.suo
+*.user
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# IDE
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
