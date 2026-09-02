@@ -19,7 +19,7 @@ All planning documents are in the `/docs` folder:
 
 ## CI/CD Status
 
-![CI/CD Build](https://github.com/YOUR-USERNAME/RaceDay/actions/workflows/ci.yml/badge.svg)
+![CI/CD Build](https://github.com/KamogeloL18/Race-Day/blob/main/.github/workflows/ci-success.jpg)
 
 
 ## Setup Instructions
