@@ -17,7 +17,7 @@ All planning documents are in the `/docs` folder:
 
 - `ERD.pdf` - Entity Relationship Diagram for RaceDay database with 7 entities 
 - `APIEndpointPlan.pdf` - RESTful API endpoint specifications tables
-- `RaceDayDatabase.sql` - SQL Server database creation script
+- `RaceDayDatabase.sql` - SQL Server database creation script for the database schema 
 
 ## CI/CD Status
 
