@@ -14,8 +14,8 @@ RaceDay is a full-stack web-based event management system designed specifically 
 All planning documents are in the `/docs` folder:
 
 - `ERD.pdf` - Entity Relationship Diagram
-- `API_Endpoint_Plan.pdf` - RESTful API endpoint specifications
-- `RaceDay_DatabaseScript.sql` - SQL Server database creation script
+- `APIEndpointPlan.pdf` - RESTful API endpoint specifications
+- `RaceDayDatabase.sql` - SQL Server database creation script
 
 ## CI/CD Status
 
@@ -25,6 +25,6 @@ All planning documents are in the `/docs` folder:
 ## Setup Instructions
 
 1. Clone the repository
-2. Open `docs/RaceDay_DatabaseScript.sql` in SSMS
+2. Open `docs/RaceDayDatabase.sql` in SSMS
 3. Execute the script to create the database
 4. Verify all tables and seed data are created
